@@ -1,0 +1,7 @@
+<li>{{announcements.type}} {{announcements.date}}
+  {{#if isMessageShowing}}
+    <p {{action 'messageHide'}}>{{announcements.message}}</p>
+    {{else}}
+      <button {{action 'messageShow'}}>Show Message</button>
+    {{/if}}
+</li>
