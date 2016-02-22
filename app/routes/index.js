@@ -18,10 +18,10 @@ export default Ember.Route.extend({
         }
       });
       rental.save();
-      this.transitionTo('index');
+      this.transitionTo('rental');
     },
     destroyRental(rental) {
-      rental.destroyRental();
+      rental.destroyRecord();
       this.transitionTo('index');
     }
   }
