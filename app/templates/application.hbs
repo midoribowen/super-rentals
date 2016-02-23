@@ -1,1 +1,17 @@
-{{outlet}}
+<header class="jumbotron">
+  <div class="container">
+    <h1>Super Rentals</h1>
+    <p><em>We hope you find exactly what you're looking for in a place to stay!</em></p>
+  </div>
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<hr>
+<div class="container">
+  <footer>
+    {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+  </footer>
+</div>

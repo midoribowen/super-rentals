@@ -1,25 +1,20 @@
-<div class="container">
-  <h1>Welcome to Super Rentals</h1>
-  <div class="row">
-    <div class="col-sm-8">
-      <p>We hope you find exactly what you're looking for in a place to stay.</p>
-
-      <ul>
-        {{#each model as |rental|}}
-          {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
-        {{/each}}
-      </ul>
-    </div>
-    <div class="col-sm-4">
-      {{#link-to 'announcements'}}<h4>Announcements</h4>{{/link-to}}
-
-      {{#link-to 'about'}}About{{/link-to}}<br>
-      {{#link-to 'contact'}}Contact Us{{/link-to}}
-    </div>
+<div class="row">
+  <div class="col-sm-8">
+    <ul>
+      {{#each model as |rental|}}
+        {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
+      {{/each}}
+    </ul>
   </div>
-  <div class="row">
-    <div class="col-sm-12">
-      {{new-rental save2="save3"}}
-    </div>
+  <div class="col-sm-4">
+    {{#link-to 'announcements'}}<h4>Announcements</h4>{{/link-to}}
+
+    {{#link-to 'about'}}About{{/link-to}}<br>
+    {{#link-to 'contact'}}Contact Us{{/link-to}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    {{new-rental save2="save3"}}
   </div>
 </div>
