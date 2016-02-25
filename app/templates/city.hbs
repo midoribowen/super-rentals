@@ -1,5 +1,9 @@
-<h2>More information about {{model.name}}</h2>
+<h2>Welcome to {{model.name}}</h2>
 
-<!-- Attractions -->
+{{city-tile city=model destroyCity="destroyCity"}}
+
+<hr>
+
+{{new-rental saveRental="saveRental" city=model}}
 
 {{#link-to 'index'}}Home{{/link-to}}
